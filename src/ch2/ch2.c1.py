@@ -16,5 +16,5 @@ If an influencer lost 0.2 (or 20%) of their followers each day, then the retenti
 """
 
 def decayed_followers(intl_followers, fraction_lost_daily, days):
-    retention_rate = float(1 - fraction_lost_daily)
+    retention_rate = 1 - fraction_lost_daily
     return intl_followers * (retention_rate ** days)

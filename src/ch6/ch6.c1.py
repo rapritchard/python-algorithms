@@ -51,5 +51,5 @@ def find_subset_sum(nums, target, index):
     exclude_current = find_subset_sum(nums, target, index - 1)
     include_current = find_subset_sum(nums, target - nums[index], index - 1)
 
-    return  exclude_current or include_current
+    return exclude_current or include_current
     
